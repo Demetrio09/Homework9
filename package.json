@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Demetrio09/Homework9#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "inquirer": "^7.1.0"
+    "inquirer": "^7.1.0",
+    "inquirer-autocomplete-prompt": "^1.0.2"
   }
 }
