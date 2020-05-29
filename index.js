@@ -1,6 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
+const generateMarkdown = require(".generateMarkdown.js");
 
 genereteReadme();
 
@@ -26,8 +27,7 @@ async function genereteReadme() {
             message: "Please write a short description of your project",
             name: "description"
         });
-        const { license } = await inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
-        inquirer.prompt({
+        const { license } = await inquirer.prompt({
             type: "autocomplete",
             message: "What kind of license should your project have?",
             name: "license"
@@ -39,7 +39,9 @@ async function genereteReadme() {
         });
         console.log(`what you have typed ${userName}, ${email}, ${url}, ${projectName}, ${description}, ${license}, ${command}!`);
 
+        generateMarkdown(userName, email, url, projectName, description, license, command);
+
     } catch (err) {
         console.log(err);
     }
-}
+};
