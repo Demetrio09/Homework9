@@ -1,7 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
-const generateMarkdown = require(".generateMarkdown.js");
+inquirer.registerPrompt('suggest', require('inquirer-prompt-suggest'));
 
 genereteReadme();
 
@@ -37,9 +37,17 @@ async function genereteReadme() {
             message: "What command should be run to install dependencies?",
             name: "command"
         });
+        const { suggested } = await inquirer.prompt({
+            type: 'suggest',
+            name: 'kittenName',
+            message: 'Enter a name for your kitten:',
+            suggestions: ['MIT', 'EPL', 'CDDL', 'BSD', 'Ms-PL', 'GPL', 'Other'],
+        });
         console.log(`what you have typed ${userName}, ${email}, ${url}, ${projectName}, ${description}, ${license}, ${command}!`);
 
-        generateMarkdown(userName, email, url, projectName, description, license, command);
+        fs.writeFileSync("README.md", generateMarkdown(), function (err) {
+            if (err) throw err;
+        })
 
     } catch (err) {
         console.log(err);
