@@ -1,9 +1,9 @@
-# -user input / Title
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)https://github.com/Demetrio09/Project-1
+
+# ju
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)ju
 
 ## Description
-
--user input
+ju
 
 ## Table of Contents
 
@@ -23,24 +23,24 @@
 To install necessary dependencies, run the following command:
 
 ```
-npm i / user input
+npm i
 ```
 
 ## Usage
-[user input]
+ju
 
 ## License
-This project is licensed under the /-user input/ license.
+This project is licensed under the EPL license.
 
 ## Contributing
-[user input - shoot me a text]
+ju
 
 ## Tests
 To run tests, run the following command:
 
 ```
-npm test [-user input]
+npm test
 ```
 
 ## Questions
-If you have any questions about the repo, open an issue or contact [-user input /username](undefined) directly at [-user input / email](undefined).
+If you have any questions about the repo, open an issue or contact ju(undefined) directly at ju (undefined).
