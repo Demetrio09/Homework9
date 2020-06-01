@@ -28,7 +28,7 @@ module.exports = {
         {
             type: "suggest",
             message: "What kind of license should your project have?",
-            suggestions: ['MIT', 'EPL', 'CDDL', 'BSD', 'Ms-PL', 'GPL', 'Other'],
+            suggestions: ['EPL', 'MIT', 'CDDL', 'BSD', 'Ms-PL', 'GPL', 'Other'],
             name: "license"
         },
         {
