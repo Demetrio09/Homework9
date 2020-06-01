@@ -7,6 +7,7 @@ module.exports =
 Project URL: ${answers.projectURL}
 
 ## Description
+
 ${answers.description}
 
 ## Table of Contents
@@ -24,6 +25,7 @@ ${answers.description}
 * [Questions](#questions)
 
 ## Instalation
+
 To install necessary dependencies, run the following command:
 
 \`\`\`
@@ -31,15 +33,19 @@ ${answers.dependenciesCommand}
 \`\`\`
 
 ## Usage
+
 ${answers.repoInfo}
 
 ## License
+
 This project is licensed under the ${answers.license} license.
 
 ## Contributing
+
 ${answers.contributing}
 
 ## Tests
+
 To run tests, run the following command:
 
 \`\`\`
