@@ -21,7 +21,7 @@ async function init() {
 
         await writeFileAsync("README.md", mkdText);
 
-        console.log("Successfully generated your README file!");
+        console.log("Successfully created your README file!");
     } catch (err) {
         console.log(err);
     }
